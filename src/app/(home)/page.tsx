@@ -1,16 +1,19 @@
-import Link from 'next/link';
+import { Hero } from '@/components/home/hero';
+import { ContentPillars } from '@/components/home/content-pillars';
+import { Method } from '@/components/home/method';
+import { SeriesSection } from '@/components/home/series';
+import { Playlists } from '@/components/home/playlists';
+import { CTA } from '@/components/home/cta';
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col justify-center text-center flex-1">
-      <h1 className="text-2xl font-bold mb-4">Hello World</h1>
-      <p>
-        You can open{' '}
-        <Link href="/docs" className="font-medium underline">
-          /docs
-        </Link>{' '}
-        and see the documentation.
-      </p>
+    <div>
+      <Hero />
+      <ContentPillars />
+      <Method />
+      <SeriesSection />
+      <Playlists />
+      <CTA />
     </div>
   );
 }
