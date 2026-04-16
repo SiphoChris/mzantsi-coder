@@ -1,0 +1,5 @@
+{
+  "title": "Challenges",
+  "defaultOpen": false,
+  "pages": ["index", "javascript", "css", "typescript", "python"]
+}
